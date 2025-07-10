@@ -1,0 +1,74 @@
+[0m18:45:35.457753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112cdbb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115213610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115213890>]}
+
+
+============================== 18:45:35.473558 | aa65efc7-a13f-4cb1-adbe-6afd2c569be9 ==============================
+[0m18:45:35.473558 [info ] [MainThread]: Running with dbt=1.10.3
+[0m18:45:35.473873 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/Dasha/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:45:35.503152 [info ] [MainThread]: Creating dbt configuration folder at /Users/Dasha/.dbt
+[0m18:46:36.842967 [debug] [MainThread]: Starter project path: /Users/Dasha/Code/gym/railway-analytics-duckdb/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m18:46:36.852877 [info ] [MainThread]: 
+Your new dbt project "railway_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:46:36.853404 [info ] [MainThread]: Setting up your profile.
+[0m19:01:01.562983 [info ] [MainThread]: Profile railway_analytics written to /Users/Dasha/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:01:01.566221 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 926.09375, "process_in_blocks": "0", "process_kernel_time": 0.313975, "process_mem_max_rss": "151207936", "process_out_blocks": "0", "process_user_time": 1.3644}
+[0m19:01:01.567597 [debug] [MainThread]: Command `dbt init` succeeded at 19:01:01.567312 after 926.10 seconds
+[0m19:01:01.568547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115390c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1149c1130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1152f9260>]}
+[0m19:01:01.569393 [debug] [MainThread]: Flushing usage events
+[0m19:01:01.728498 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:43:05.707548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059db4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ecb610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ecb750>]}
+
+
+============================== 19:43:05.710650 | 26044a19-f3c7-4f72-bbc1-656c96d4a315 ==============================
+[0m19:43:05.710650 [info ] [MainThread]: Running with dbt=1.10.3
+[0m19:43:05.710907 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/Dasha/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt deps', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:43:05.711250 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/Dasha/Code/gym/railway-analytics-duckdb/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m19:43:05.711519 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 0.033537917, "process_in_blocks": "0", "process_kernel_time": 0.054902, "process_mem_max_rss": "103546880", "process_out_blocks": "0", "process_user_time": 0.464343}
+[0m19:43:05.711710 [debug] [MainThread]: Command `dbt deps` failed at 19:43:05.711670 after 0.03 seconds
+[0m19:43:05.711851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ec29e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dc7770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d69bf0>]}
+[0m19:43:05.711967 [debug] [MainThread]: Flushing usage events
+[0m19:43:06.067369 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:16:32.706415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c48830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a874d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a87750>]}
+
+
+============================== 20:16:32.708321 | 33d0e72f-dd01-41c0-9e69-195aafb1acaa ==============================
+[0m20:16:32.708321 [info ] [MainThread]: Running with dbt=1.10.3
+[0m20:16:32.708617 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/Dasha/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --model +reverse_etl', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:16:32.708806 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of
+`--resource-type model --select`
+[0m20:16:32.708963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '33d0e72f-dd01-41c0-9e69-195aafb1acaa', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106937820>]}
+[0m20:16:32.709184 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/Dasha/Code/gym/railway-analytics-duckdb/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:16:32.709391 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m20:16:32.709826 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.03029275, "process_in_blocks": "0", "process_kernel_time": 0.06367, "process_mem_max_rss": "109068288", "process_out_blocks": "0", "process_user_time": 0.465875}
+[0m20:16:32.710016 [debug] [MainThread]: Command `dbt run` failed at 20:16:32.709981 after 0.03 seconds
+[0m20:16:32.710150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10691a250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10691a360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10690ab50>]}
+[0m20:16:32.710267 [debug] [MainThread]: Flushing usage events
+[0m20:16:32.871362 [debug] [MainThread]: An error was encountered while trying to flush usage events
